@@ -103,6 +103,10 @@ public class ProxyProperties {
 	@Data
 	public static class OpenaiConfig {
 		/**
+		 * gpt的api-url.
+		 */
+		private String gptApiUrl;
+		/**
 		 * gpt的api-key.
 		 */
 		private String gptApiKey;
@@ -189,5 +193,9 @@ public class ProxyProperties {
 		 * 任务超时时间(分钟).
 		 */
 		private int timeoutMinutes = 5;
+		/**
+		 * 线程池CorePoolSize.
+		 */
+		private int notifyPoolSize = 10;
 	}
 }
